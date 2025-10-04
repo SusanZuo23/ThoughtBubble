@@ -1,0 +1,241 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fbf7ec;
+  color: #004f5f;
+}
+
+
+.onest-reg {
+  font-family: "Onest", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 3rem;  /* make it stand out */
+  color: #ffb0a0;   /* matches your theme */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004f5f;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffb0a0;
+}
+
+.logo img {
+  height: 50px; 
+  width: auto;
+  position: relative;
+  z-index: 2; 
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fbf7ec;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: #ffb0a0;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: #fbf7ec;
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.slides img {
+  width: 100%;
+  display: none;
+}
+
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 79, 95, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* General Section */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 15px;
+  color: #004f5f;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background-color: #ffb0a0;
+  color: #004f5f;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background-color: #004f5f;
+  color: #fbf7ec;
+}
+
+/* Episodes Grid */
+.episode-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.episode-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.episode-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.episode-card h3 {
+  margin: 15px 0 10px;
+  color: #004f5f;
+}
+
+/* Team Grid */
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 300px;
+  background-color: #ffb0a060;
+  color: #004f5f;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.team-member img {
+  width: 210px;
+  height: 210px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Contact Form */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 2px solid #004f5f;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #004f5f;
+  color: #fbf7ec;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #ffb0a0;
+  color: #004f5f;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #004f5f;
+  color: #fbf7ec;
+  margin-top: 40px;
+}
+
+.reel-container {
+    width: 400px;
+    max-width: 90%;
+    height: 480px;
+    border: 2px solid #004f5f;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.reel-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.nav-buttons .btn {
+    background-color: #ffb0a0;
+    color: #004f5f;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+}
+
+.nav-buttons .btn:hover {
+    background-color: #004f5f;
+    color: #fbf7ec;
+}

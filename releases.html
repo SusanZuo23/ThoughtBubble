@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Releases - ThoughtBubble</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/thoughtbubble favicon.png">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/thoughtbubble logo.png" alt="ThoughtBubble Logo">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="team.html">About</a></li>
+      <li><a href="releases.html">Podcast</a></li>
+      <li><a href="getInvolved.html">Get Involved</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Listen to Our Podcasts</h2>
+    <p>Find us on your favorite platforms:</p>
+    <p><a href="https://open.spotify.com/show/6BqWejsKbQ7Vj1IVEUOsGf?si=aedcc63a69524bd0&nd=1&dlsi=09e90b189889458b" 
+        class="btn">Spotify</a> 
+       <a href="https://www.youtube.com/@thoughtbubblepsych" class="btn">YouTube</a></p>
+  </section>
+
+  <section>
+  <h2>Instagram Reels</h2>
+  <p>Explore our short-form content:</p>
+
+  <!-- Instagram Reels Slideshow -->
+  <div class="reel-container">
+      <iframe id="reelFrame" src="" allowtransparency="true" scrolling="no"></iframe>
+  </div>
+  <div class="nav-buttons">
+      <button class="btn" onclick="prevReel()">⟨ Previous</button>
+      <button class="btn" onclick="nextReel()">Next ⟩</button>
+  </div>
+</section>
+
+<script>
+    // Replace these URLs with your Instagram Reel embed URLs
+    const reels = [
+        "https://www.instagram.com/reel/REEL_ID_1/embed",
+        "https://www.instagram.com/reel/REEL_ID_2/embed",
+        "https://www.instagram.com/reel/REEL_ID_3/embed"
+    ];
+
+    let currentIndex = 0;
+    const reelFrame = document.getElementById('reelFrame');
+
+    function showReel(index) {
+        reelFrame.src = reels[index];
+    }
+
+    function nextReel() {
+        currentIndex = (currentIndex + 1) % reels.length;
+        showReel(currentIndex);
+    }
+
+    function prevReel() {
+        currentIndex = (currentIndex - 1 + reels.length) % reels.length;
+        showReel(currentIndex);
+    }
+
+    // Automatically rotate every 10 seconds
+    setInterval(nextReel, 10000);
+
+    // Initialize with the first reel
+    showReel(currentIndex);
+</script>
+
+
+  <footer>
+    <p>© 2025 ThoughtBubble</p>
+  </footer>
+</body>
+</html>

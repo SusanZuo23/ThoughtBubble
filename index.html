@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThoughtBubble</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/thoughtbubble favicon.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+  </style>
+
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/thoughtbubble logo.png" alt="ThoughtBubble Logo">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="team.html">About</a></li>
+      <li><a href="releases.html">Podcast</a></li>
+      <li><a href="getInvolved.html">Get Involved</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section with Rotating Graphics -->
+  <header class="hero">
+    <div class="carousel">
+      <div class="slides">
+        <img src="https://images.pexels.com/photos/33754560/pexels-photo-33754560.jpeg" alt="Graphic 1">
+        <img src="https://images.pexels.com/photos/32276165/pexels-photo-32276165.jpeg" alt="Graphic 2">
+        <img src="https://images.pexels.com/photos/14176495/pexels-photo-14176495.jpeg" alt="Graphic 3">
+      </div>
+    </div>
+    <div class="hero-text">
+      <h1>Welcome to <span class="onest-reg">thoughtbubble</span></h1>
+      <p>The podcast by teenagers, for teenagers.</p>
+    </div>
+  </header>
+
+  <!-- Mission Statement -->
+  <section class="mission">
+    <h2>Our Mission</h2>
+    <p>
+      At ThoughtBubble, we empower young minds to navigate a world full of psychological misinformation by providing an accessible space to learn science-based psychology. In an age where social media and brands often exploit how the brain works to influence behavior, we aim to equip people with the tools to recognize manipulation, think critically, and understand how their minds function. By grounding our content in real science, we help build awareness and informed decision-making for all of our members and listeners.
+    </p>
+  </section>
+
+  <!-- Sneak Peek Episodes -->
+  <section class="episodes">
+    <h2>Latest Podcast Episodes</h2>
+    <div class="episode-grid">
+      <div class="episode-card">
+        <img src="images/spotify logo.png" alt="Episode 3" width="50" height="auto">
+        <h3>The Dopamine Effect of Likes on Social Media</h3>
+        <p>Today, we are joined by Esther, a fellow student who has done extensive research on the function of dopamine. Together, we will intersect this neurotransmitter with social media, analyzing them together to address the adolescent mental health crisis. Finally, we will introduce some strategies to improve our relationship with screentime.</p>
+        <a href="https://open.spotify.com/episode/6gYK5fFsr9Lj2RwRs50HyY?si=R8ZmboIPQxqTghGShGsM_Aepisode3.html" class="btn">Listen Here</a>
+      </div>
+      <div class="episode-card">
+        <img src="images/spotify logo.png" alt="Episode 2" width="50" height="auto">
+        <h3>School Psychologists</h3>
+        <p>Today we are joined by two amazing guests: Riya and Alyna. With their help, we will be talking about school psychologists and counselors. Join us as we discuss the teenage mental health crisis, the lack of support, and what high schools across the US can do to combat this issue.</p>
+        <a href="https://open.spotify.com/episode/0B3CSzFsL7uzdgq4Z6bUdi?si=9392a42a379c47b0" class="btn">Listen Here</a>
+      </div>
+      <div class="episode-card">
+        <img src="images/spotify logo.png" alt="Episode 1" width="50" height="auto">
+        <h3>Psychological Disorders</h3>
+        <p>Today we will be introducing some basic facts about various psychological concepts. Join us as we discuss some of the most prevalent disorders, such as anxiety disorders, mood disorders, and personality disorders!</p>
+        <a href="https://open.spotify.com/episode/6oW9ZWGMCrIS9vgE3UrRRV?si=d112e28363db453a" class="btn">Listen Here</a>
+      </div>
+    </div>
+  </section>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="releases.html" style="color: #004f5f; font-weight: bold;">See More</a>
+  </div>
+  
+  <footer>
+    <p>© 2025 ThoughtBubble</p>
+  </footer>
+
+  <script>
+    // Simple image carousel
+    let index = 0;
+    const slides = document.querySelectorAll(".slides img");
+
+    function showSlide() {
+      slides.forEach((slide, i) => {
+        slide.style.display = (i === index) ? "block" : "none";
+      });
+      index = (index + 1) % slides.length;
+    }
+
+    showSlide(); 
+    setInterval(showSlide, 3000); // Change every 3 seconds
+  </script>
+
+</body>
+</html>
